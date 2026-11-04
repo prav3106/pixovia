@@ -547,6 +547,42 @@ img { max-width: 100%; }
 .field input:focus, .field textarea:focus { outline: none; border-color: var(--peach); box-shadow: 0 0 0 3px rgba(243,163,140,.25); }
 .field input[aria-invalid="true"] { border-color: var(--coral); }
 .field textarea { resize: vertical; }
+
+/* "What do you need?" picker */
+.combo { position: relative; }
+/* Lift the open picker above the fields that follow it. */
+.field:has(.combo.is-open) { position: relative; z-index: 15; }
+.combo input { padding-right: 3rem; }
+.combo-toggle {
+  position: absolute; top: 0; right: 0; bottom: 0; width: 3rem;
+  display: grid; place-items: center;
+  background: none; border: 0; color: var(--peach); cursor: pointer;
+}
+.combo-toggle .chev { transition: transform .2s var(--ease-out); }
+.combo.is-open .combo-toggle .chev { transform: rotate(180deg); }
+.combo-list {
+  position: absolute; left: 0; right: 0; top: calc(100% + .4rem); z-index: 15;
+  max-height: 18rem; overflow-y: auto; overscroll-behavior: contain;
+  margin: 0; padding: .35rem; list-style: none;
+  background: linear-gradient(170deg, #2e1825, #24101f);
+  border: 1px solid var(--glass-line-2); border-radius: 12px;
+  box-shadow: 0 30px 70px -20px rgba(0,0,0,.85);
+  scrollbar-width: thin; scrollbar-color: rgba(243,163,140,.35) transparent;
+  animation: combo-in .16s var(--ease-out);
+}
+.combo-list[hidden] { display: none; }
+@keyframes combo-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+.combo-group {
+  position: sticky; top: -.35rem; z-index: 1;
+  padding: .7rem .75rem .35rem;
+  font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--peach);
+  background: #2a1521;
+}
+.combo-option { padding: .6rem .75rem; border-radius: 8px; color: var(--text); cursor: pointer; }
+.combo-option:hover, .combo-option[aria-selected="true"] { background: var(--glass-2); color: var(--heading); }
+.combo-option[aria-selected="true"] { box-shadow: inset 3px 0 0 var(--coral); }
+.combo-option mark { background: none; color: var(--peach); font-weight: 600; }
+.combo-empty { padding: .75rem; color: var(--muted); font-size: var(--t-sm); }
 .form-error { background: rgba(224,90,111,.18); color: var(--heading); padding: .75rem 1rem; border-radius: var(--radius); font-weight: 500; }
 .contact-form .btn { justify-self: start; }
 
@@ -668,39 +704,6 @@ img { max-width: 100%; }
 .hero-mark .slab-depth, .hero-mark .pixel-depth { transform-box: fill-box; transition: transform .5s var(--ease-out); }
 .hero-mark .slab-depth { transform: translate(calc(var(--mx, 0) * 8px), calc(var(--my, 0) * 8px)); }
 .hero-mark .pixel-depth { transform: translate(calc(var(--mx, 0) * 22px), calc(var(--my, 0) * 22px)); }
-
-/* ---------- Contact menu (header) ---------- */
-
-.nav-contact { position: relative; }
-.site-nav .nav-cta { display: inline-flex; align-items: center; gap: .4rem; font: inherit; font-weight: 600; cursor: pointer; }
-.nav-cta .chev { transition: transform .2s var(--ease-out); }
-.nav-cta[aria-expanded="true"] .chev { transform: rotate(180deg); }
-.contact-menu {
-  position: absolute; right: 0; top: calc(100% + .6rem); z-index: 30;
-  width: 17rem; padding: .4rem;
-  background: linear-gradient(170deg, #2e1825, #24101f);
-  border: 1px solid var(--glass-line-2); border-radius: 14px;
-  box-shadow: 0 30px 70px -20px rgba(0,0,0,.85);
-  animation: menu-in .18s var(--ease-out);
-}
-.contact-menu[hidden] { display: none; }
-@keyframes menu-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
-.site-nav .contact-menu a {
-  display: flex; align-items: center; gap: .8rem;
-  padding: .7rem .75rem; border: 0; border-radius: var(--radius);
-}
-.site-nav .contact-menu a:hover, .site-nav .contact-menu a:focus-visible { background: var(--glass-2); }
-.contact-menu .cm-ico { flex: none; width: 2.2rem; height: 2.2rem; padding: .5rem; border-radius: 9px; background: var(--glass-2); color: var(--peach); }
-.contact-menu a:first-child .cm-ico { background: var(--brand-gradient); color: #fff; }
-.contact-menu span { display: grid; line-height: 1.25; min-width: 0; }
-.contact-menu strong { color: var(--heading); font-weight: 600; }
-.contact-menu small { color: var(--muted); font-size: var(--t-sm); overflow-wrap: anywhere; }
-
-@media (max-width: 760px) {
-  .nav-contact { margin-top: .75rem; }
-  .site-nav .nav-cta { width: 100%; justify-content: center; margin-top: 0; padding: .8rem 1.2rem; }
-  .contact-menu { position: static; width: auto; margin-top: .5rem; box-shadow: none; }
-}
 
 /* ---------- Works: results ---------- */
 

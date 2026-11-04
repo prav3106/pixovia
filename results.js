@@ -14,7 +14,8 @@ const RESULT_GROUPS = [
     intro: "Search, Shopping and Performance Max campaigns we manage. Figures come from Google Ads and Google Analytics." },
   { id: "digital-marketing", title: "Digital marketing", intro: "" },
   { id: "scratch-marketing", title: "Digital marketing from scratch", intro: "" },
-  { id: "meta-ads", title: "Meta ads", intro: "" },
+  { id: "meta-ads", title: "Meta ads",
+    intro: "Facebook and Instagram campaigns that bring in sales, WhatsApp enquiries and leads. Figures come from each client’s Meta Ads Manager." },
   { id: "personal-branding", title: "Personal branding", intro: "" },
 ];
 
@@ -134,6 +135,137 @@ const RESULTS = [
     shots: [
       { src: "streeting-ads.png", w: 1122, h: 496, mark: [0.6, 14.6, 35.6, 15.2],
         caption: "A$3,623 spent over six months for 326 conversions, with 11.1% of searchers clicking through." },
+    ],
+  },
+
+  // ---------- Meta ads ----------
+  {
+    group: "meta-ads",
+    client: "DK Toyz",
+    platform: "Meta Ads",
+    period: "Jun – Sep 2026",
+    figure: { value: 738 },
+    label: "online toy orders from Facebook and Instagram sale campaigns",
+    stats: [["Ad spend", "₹1,42,542"], ["Cost per order", "₹193"], ["Instagram profile visits", "2,418"]],
+    chart: {
+      title: "Website purchases by campaign",
+      rows: [["June sale", 366], ["January sale", 115], ["Catalogue scale-up", 87], ["April sale", 70], ["October campaign", 53], ["May sales", 47]],
+    },
+    shots: [
+      { src: "dktoyz-meta-top.png", w: 1818, h: 566, mark: [33.6, 24.6, 8.2, 17.4],
+        caption: "The June sale alone brought 366 website purchases; the catalogue campaign added 87 more." },
+      { src: "dktoyz-meta-sales.png", w: 1815, h: 560, mark: [33.9, 23.8, 8.2, 74],
+        caption: "Earlier sale campaigns in the same account: January, April and May each turned spend into orders." },
+    ],
+  },
+  {
+    group: "meta-ads",
+    client: "Make up Physics",
+    platform: "Meta Ads",
+    period: "Jan – Jul 2026",
+    figure: { value: 807 },
+    label: "bridal and workshop enquiries on WhatsApp and lead forms",
+    stats: [["People reached", "20.9 lakh"], ["Per 1,000 reached", "₹5.17"], ["Lowest cost per chat", "₹25.06"]],
+    chart: {
+      title: "Enquiries by campaign",
+      rows: [["Bridal, March", 312], ["Self-made workshop", 198], ["Bridal, January", 87], ["Crash courses", 78], ["Bridal lead form", 75], ["Workshop test", 29], ["Bridal, Naz", 28]],
+    },
+    shots: [
+      { src: "makeupphysics-meta-bridal.png", w: 1833, h: 507, mark: [8, 48.6, 35, 9],
+        caption: "March bridal campaign: 312 WhatsApp conversations at ₹56.58 each." },
+      { src: "makeupphysics-meta-awareness.png", w: 1818, h: 500, mark: [7.7, 44.4, 43.8, 9],
+        caption: "The awareness campaign reached 20,96,888 people for ₹10,833, about ₹5 per thousand." },
+    ],
+  },
+  {
+    group: "meta-ads",
+    client: "Life in Frame",
+    platform: "Meta Ads",
+    period: "Mar – Sep 2026",
+    figure: { value: 355 },
+    label: "bridal leads from instant forms and WhatsApp",
+    stats: [["Video views", "1,03,047"], ["Cost per view", "₹0.06"], ["Cost per WhatsApp chat", "₹27.76"]],
+    chart: {
+      title: "Leads by campaign",
+      rows: [["Bridal lead form, April", 231], ["WhatsApp leads, April", 118], ["Bridal lead form, July", 6]],
+    },
+    shots: [
+      { src: "lifeinframe-meta-leads.jpg", w: 1599, h: 375, mark: [8.7, 43, 51.4, 20.4],
+        caption: "231 bridal leads from one instant form, plus 118 WhatsApp chats at ₹27.76 each." },
+      { src: "lifeinframe-meta-recent.png", w: 1820, h: 499, mark: [8.6, 74.6, 37.8, 9.2],
+        caption: "May to September view: the same lead form keeps delivering, with an engagement campaign at ₹0.49 per profile visit." },
+    ],
+  },
+  {
+    group: "meta-ads",
+    client: "Dap Fitness",
+    platform: "Meta Ads",
+    period: "Jun – Sep 2026",
+    figure: { value: 142 },
+    label: "membership enquiries by call and WhatsApp for ₹5,265 in spend",
+    stats: [["Cost per enquiry", "₹37"], ["Lowest cost per chat", "₹26.70"], ["Impressions", "1,38,450"]],
+    chart: {
+      title: "Enquiries by campaign",
+      rows: [["Anniversary offer", 62], ["New leads campaigns", 44], ["Trainer leads", 24], ["Call campaign", 12]],
+    },
+    shots: [
+      { src: "dapfitness-meta.png", w: 1811, h: 382, mark: [47.1, 36.6, 8.1, 60],
+        caption: "Results column: calls and WhatsApp conversations from five small-budget campaigns." },
+    ],
+  },
+  {
+    group: "meta-ads",
+    client: "Annai Appan Foundation",
+    platform: "Meta Ads",
+    period: "Jun – Jul 2026",
+    figure: { value: 154 },
+    label: "home-buyer enquiries for 2 and 3 BHK flats on ₹200 a day",
+    stats: [["Cost per enquiry", "₹30.16"], ["Total spend", "₹5,253"], ["Impressions", "56,482"]],
+    chart: {
+      title: "Enquiries by campaign",
+      rows: [["2 & 3 BHK, main", 143], ["2 & 3 BHK, second ad", 11]],
+    },
+    shots: [
+      { src: "annaiappan-meta.jpg", w: 1599, h: 314, mark: [9.3, 59.8, 62.4, 15.2],
+        caption: "143 WhatsApp enquiries at ₹30.16 each from the main property campaign." },
+      { src: "annaiappan-meta-daily.jpg", w: 1599, h: 538, mark: [6.2, 49.8, 77.2, 5.2],
+        caption: "Day by day: enquiries keep arriving steadily on a ₹200 daily budget." },
+    ],
+  },
+  {
+    group: "meta-ads",
+    client: "Neithal Shipping",
+    platform: "Meta Ads",
+    period: "May – Jul 2026",
+    figure: { value: 120 },
+    label: "shipping leads from lead forms and WhatsApp",
+    stats: [["Cost per WhatsApp lead", "₹44.60"], ["Total spend", "₹6,780"], ["From Instagram", "88%"]],
+    chart: {
+      title: "Leads by platform",
+      rows: [["Instagram", 106], ["Facebook", 14]],
+    },
+    shots: [
+      { src: "neithal-meta.jpg", w: 1599, h: 262, mark: [46.8, 45, 31.2, 32.5],
+        caption: "Two campaigns: 95 WhatsApp leads at ₹44.60 and 25 form leads at ₹101.69." },
+      { src: "neithal-meta-platforms.jpg", w: 1599, h: 368, mark: [7.9, 81.6, 70.2, 9.4],
+        caption: "Split by platform: Instagram brought almost all of the WhatsApp leads." },
+    ],
+  },
+  {
+    group: "meta-ads",
+    client: "Rainbow Overseas",
+    platform: "Meta Ads",
+    period: "Jul 2026",
+    figure: { value: 112 },
+    label: "WhatsApp enquiries for a paper manufacturer, from ₹18.53 each",
+    stats: [["People reached", "4.9 lakh"], ["Per 1,000 reached", "₹2.08"], ["Total spend", "₹3,153"]],
+    chart: {
+      title: "Results by campaign",
+      rows: [["Lead ad", 91], ["Lead ad, second", 21]],
+    },
+    shots: [
+      { src: "rainbow-meta.jpg", w: 1599, h: 288, mark: [8.7, 65.2, 49, 15.8],
+        caption: "91 WhatsApp enquiries at ₹18.53 each, and an awareness run that reached 4,87,555 people." },
     ],
   },
 ];

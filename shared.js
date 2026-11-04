@@ -24,24 +24,24 @@ const SECTORS = [
   {
     name: "Shops & retail",
     products: [
-      ["Billing Software", "gst bill", "receipt", S],
-      ["POS Software", "point of sale counter", "monitor-smartphone", S],
+      ["Billing Software", "gst bill", "receipt", F],
+      ["POS Software", "point of sale counter", "monitor-smartphone", F],
       ["Ecommerce Software", "online store shop", "shopping-cart", F],
-      ["Inventory Management", "stock", "boxes", S],
+      ["Inventory Management", "stock", "boxes", F],
       ["Super Market Management", "grocery kirana mart", "shopping-basket", F],
       ["Textile Shop Management", "clothing garments saree boutique", "shirt", S],
-      ["Electronics Shop Management", "mobile appliances", "tv", S],
-      ["Furniture Shop Management", "", "sofa", S],
+      ["Electronics Shop Management", "mobile appliances", "tv", F],
+      ["Furniture Shop Management", "", "sofa", F],
       ["Hardware Shop Management", "tools paint", "hammer", S],
-      ["Medical Shop Management", "chemist pharmacy drug", "briefcase-medical", S],
+      ["Medical Shop Management", "chemist pharmacy drug", "briefcase-medical", F],
     ],
   },
   {
     name: "Healthcare",
     products: [
       ["Hospital Management", "doctor patient", "hospital", F],
-      ["Clinic Management", "doctor patient dental", "stethoscope", S],
-      ["Pharmacy Management", "chemist medical drug", "pill", S],
+      ["Clinic Management", "doctor patient dental", "stethoscope", F],
+      ["Pharmacy Management", "chemist medical drug", "pill", F],
       ["Laboratory Management", "lab diagnostic test", "flask-conical", F],
     ],
   },
@@ -49,10 +49,10 @@ const SECTORS = [
     name: "Education",
     products: [
       ["School Management", "student fees", "school", F],
-      ["Play School Management", "preschool kindergarten", "baby", S],
+      ["Play School Management", "preschool kindergarten", "baby", F],
       ["Tuition Center Management", "student fees", "book-open", S],
-      ["Coaching Institute Management", "academy student", "graduation-cap", S],
-      ["Computer Institute Management", "training student", "laptop", S],
+      ["Coaching Institute Management", "academy student", "graduation-cap", F],
+      ["Computer Institute Management", "training student", "laptop", F],
       ["Library Management", "books", "library", S],
     ],
   },
@@ -60,8 +60,8 @@ const SECTORS = [
     name: "Finance & lending",
     products: [
       ["Accounting Software", "accounts books ledger gst", "calculator", F],
-      ["Invoice Management", "bill", "file-text", S],
-      ["Quotation Management", "estimate quote", "file-spreadsheet", S],
+      ["Invoice Management", "bill", "file-text", F],
+      ["Quotation Management", "estimate quote", "file-spreadsheet", F],
       ["Loan Management", "finance emi", "hand-coins", F],
       ["Micro Finance Software", "loan group", "piggy-bank", F],
       ["Jewellery Loan Management", "gold loan pawn", "gem", F],
@@ -80,7 +80,7 @@ const SECTORS = [
       ["Warehouse Management", "godown stock", "warehouse", F],
       ["Logistics Management", "transport delivery", "container", F],
       ["Courier Management", "parcel delivery", "package", F],
-      ["Legal Document Management", "lawyer advocate", "scale", S],
+      ["Legal Document Management", "lawyer advocate", "scale", F],
     ],
   },
   {
@@ -98,31 +98,31 @@ const SECTORS = [
   {
     name: "Vehicles & field service",
     products: [
-      ["Vehicle Service Management", "garage workshop mechanic", "wrench", S],
+      ["Vehicle Service Management", "garage workshop mechanic", "wrench", F],
       ["Bike Service Management", "two wheeler garage", "bike", S],
-      ["Motor Service Management", "pump rewinding", "cog", S],
+      ["Motor Service Management", "pump rewinding", "cog", F],
       ["Petrol Bunk Management", "fuel pump station", "fuel", F],
       ["GPS Tracking Software", "fleet vehicle", "map-pin", F],
-      ["CCTV Service Management", "camera security", "cctv", S],
-      ["RO Water Service Management", "purifier", "droplets", S],
+      ["CCTV Service Management", "camera security", "cctv", F],
+      ["RO Water Service Management", "purifier", "droplets", F],
       ["Water Plant Management", "can supply", "glass-water", S],
     ],
   },
   {
     name: "Beauty & fitness",
     products: [
-      ["Gym Management", "fitness membership", "dumbbell", S],
+      ["Gym Management", "fitness membership", "dumbbell", F],
       ["Salon & Spa Management", "hair parlour boutique", "scissors", S],
-      ["Beauty Parlour Management", "salon bridal boutique", "sparkles", S],
+      ["Beauty Parlour Management", "salon bridal boutique", "sparkles", F],
     ],
   },
   {
     name: "Community & membership",
     products: [
       ["Matrimony Software", "marriage bureau", "heart", F],
-      ["Membership Management", "club", "badge-check", S],
-      ["NGO Management", "trust charity donation", "hand-heart", S],
-      ["Society Management", "apartment association", "building-2", S],
+      ["Membership Management", "club", "badge-check", F],
+      ["NGO Management", "trust charity donation", "hand-heart", F],
+      ["Society Management", "apartment association", "building-2", F],
       ["MLM Software", "network marketing direct selling", "network", F],
     ],
   },
@@ -203,28 +203,7 @@ function initNav() {
     toggle.textContent = open ? "Close" : "Menu";
   };
   toggle.addEventListener("click", () => setOpen(!nav.classList.contains("open")));
-  nav.addEventListener("click", (e) => { if (e.target.closest("a")) { setOpen(false); setMenu(false); } });
-
-  // Contact us opens a small menu: WhatsApp, call or email.
-  const cta = $(".nav-contact .nav-cta");
-  const menu = $("#contact-menu");
-  const setMenu = (open) => {
-    menu.hidden = !open;
-    cta.setAttribute("aria-expanded", String(open));
-  };
-  cta.addEventListener("click", () => {
-    const open = menu.hidden;
-    setMenu(open);
-    if (open) menu.querySelector("a").focus();
-  });
-  document.addEventListener("click", (e) => { if (!e.target.closest(".nav-contact")) setMenu(false); });
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !menu.hidden) { setMenu(false); cta.focus(); }
-  });
-  $(".nav-contact").addEventListener("focusout", (e) => {
-    if (!e.currentTarget.contains(e.relatedTarget)) setMenu(false);
-  });
-
+  nav.addEventListener("click", (e) => { if (e.target.closest("a")) setOpen(false); });
   $("#year").textContent = new Date().getFullYear();
   initMotion();
 }

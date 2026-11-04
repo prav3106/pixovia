@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us — Pixovia</title>
+  <meta name="description" content="Tell Pixovia about your business. We reply on WhatsApp, usually the same day.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Saira:wdth,wght@100..125,500..700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+  <meta name="theme-color" content="#1a0b17">
+  <link rel="stylesheet" href="styles.css?v=32">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html" aria-label="Pixovia home"><svg class="logo-mark" viewBox="0 0 236 318" aria-hidden="true"><defs><linearGradient id="lh-g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#4e1e3e"/><stop offset=".45" stop-color="#c2506a"/><stop offset=".72" stop-color="#e05a6f"/><stop offset="1" stop-color="#f3a38c"/></linearGradient><linearGradient id="lh-p" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#6a2a52"/><stop offset="1" stop-color="#a0466f"/></linearGradient></defs><path fill="url(#lh-g)" d="M0 0H190A44 44 0 0 1 234 44V136A52 52 0 0 1 182 188H0V152A58 48 0 0 1 58 104H208.5A8.5 8.5 0 0 0 208.5 87H72A72 50 0 0 1 0 37Z"/><rect x="-36" y="-36" width="72" height="72" rx="7" fill="url(#lh-p)" transform="translate(51 264) rotate(45)"/></svg><img class="logo-word" src="assets/logo/wordmark-white.png" alt="" width="481" height="96"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="services.html">Services</a>
+        <a href="works.html">Works</a>
+        <a class="nav-cta" href="contact.html" aria-current="page">Contact us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Contact us</span></nav>
+        <h1>Contact us</h1>
+        <p class="lede">Send a few details and we’ll reply on WhatsApp, usually the same day.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Contact form">
+      <div class="wrap contact-grid">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input id="f-name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="f-business">Business name and type</label>
+            <input id="f-business" name="business" required placeholder="e.g. Sri Murugan Textiles, clothing shop">
+          </div>
+          <div class="field">
+            <label for="f-need">What do you need?</label>
+            <div class="combo">
+              <input id="f-need" name="need" required role="combobox" aria-expanded="false" aria-controls="need-list" aria-autocomplete="list" autocomplete="off" placeholder="Pick a service or product, or type your own">
+              <button class="combo-toggle" type="button" tabindex="-1" aria-label="Show all options"><svg class="chev" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+              <ul class="combo-list" id="need-list" role="listbox" aria-label="Services and products" hidden></ul>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg">Anything else <span class="optional">(optional)</span></label>
+            <textarea id="f-msg" name="message" rows="4"></textarea>
+          </div>
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <button class="btn btn-dark" type="submit">Send on WhatsApp</button>
+        </form>
+
+        <aside class="contact-aside" aria-labelledby="direct-title">
+          <h2 id="direct-title">Prefer to call or email?</h2>
+          <dl class="contact-details">
+            <div><dt>Phone</dt><dd><a href="tel:+919345471624">+91 93454 71624</a></dd></div>
+            <div><dt>WhatsApp</dt><dd><a href="https://wa.me/919345471624" target="_blank" rel="noopener">+91 93454 71624</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:pixoviapvt@gmail.com">pixoviapvt@gmail.com</a></dd></div>
+          </dl>
+          <p class="contact-note">After you get in touch, we set up a short call, show you a demo and send a clear quote.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html" aria-label="Pixovia home"><svg class="logo-mark" viewBox="0 0 236 318" aria-hidden="true"><defs><linearGradient id="lf-g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#4e1e3e"/><stop offset=".45" stop-color="#c2506a"/><stop offset=".72" stop-color="#e05a6f"/><stop offset="1" stop-color="#f3a38c"/></linearGradient><linearGradient id="lf-p" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#6a2a52"/><stop offset="1" stop-color="#a0466f"/></linearGradient></defs><path fill="url(#lf-g)" d="M0 0H190A44 44 0 0 1 234 44V136A52 52 0 0 1 182 188H0V152A58 48 0 0 1 58 104H208.5A8.5 8.5 0 0 0 208.5 87H72A72 50 0 0 1 0 37Z"/><rect x="-36" y="-36" width="72" height="72" rx="7" fill="url(#lf-p)" transform="translate(51 264) rotate(45)"/></svg><img class="logo-word" src="assets/logo/wordmark-white.png" alt="" width="481" height="96" loading="lazy"></a>
+        <p>Software, branding and marketing for growing businesses.</p>
+      </div>
+      <nav aria-labelledby="footer-pages">
+        <h2 class="footer-title" id="footer-pages">Pages</h2>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html" aria-current="page">Contact us</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <ul class="footer-links">
+          <li><a href="tel:+919345471624">+91 93454 71624</a></li>
+          <li><a href="mailto:pixoviapvt@gmail.com">pixoviapvt@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap"><p class="footer-base">© <span id="year"></span> Pixovia</p></div>
+  </footer>
+
+  <script src="shared.js?v=32"></script>
+  <script src="contact.js?v=32"></script>
+</body>
+</html>

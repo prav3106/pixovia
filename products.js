@@ -121,7 +121,8 @@ function openDetails(p, from) {
   $("#dlg-price-note").textContent = p.tier === "starter"
     ? "Starter price for a single shop or branch."
     : "Final price within this range depends on branches, users and modules.";
-  $("#dlg-demo").href = whatsappLink(`Hi Pixovia, I'd like a demo of ${p.name}.`);
+  $("#dlg-demo").href = `contact.html?need=${encodeURIComponent(`${p.name} demo`)}`;
+  $("#dlg-whatsapp").href = whatsappLink(`Hi Pixovia, I'd like a demo of ${p.name}.`);
   dlg.showModal();
 }
 

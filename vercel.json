@@ -1,7 +1,6 @@
 {
   "redirects": [
     { "source": "/clients.html", "destination": "/works.html", "permanent": true },
-    { "source": "/home.html", "destination": "/", "permanent": true },
-    { "source": "/contact.html", "destination": "https://wa.me/919345471624?text=Hi%20Pixovia%2C%20I%27d%20like%20to%20talk%20about%20my%20business.", "permanent": false }
+    { "source": "/home.html", "destination": "/", "permanent": true }
   ]
 }

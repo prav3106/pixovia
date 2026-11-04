@@ -1,4 +1,4 @@
-// Clients page. Needs shared.js loaded first.
+// Works page. Needs shared.js loaded first.
 
 function initClients() {
   const grid = $("#client-grid");
@@ -46,7 +46,7 @@ function initClients() {
     buttons[next].focus();
   });
 
-  // Arriving from a homepage logo: clients.html?client=<index>
+  // Arriving from a home page logo: works.html?client=<index>
   const fromUrl = Number(new URLSearchParams(location.search).get("client"));
   select(Number.isInteger(fromUrl) && CLIENTS[fromUrl] ? fromUrl : 0);
   spot.classList.remove("is-changing");

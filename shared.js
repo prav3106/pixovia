@@ -2,7 +2,7 @@
 
 // Replace with Pixovia's real WhatsApp number (country code + number, digits only).
 const CONFIG = {
-  whatsapp: "910000000000",
+  whatsapp: "919345471624",
 };
 
 // ---------- Pricing ----------
@@ -139,7 +139,7 @@ const SECTORS = [
 // ---------- Clients ----------
 
 // Logos live in assets/clients/<file>. Leave sector or work empty when unknown;
-// add `work: "…"` to show what Pixovia did for them on the Clients page.
+// add `work: "…"` to show what Pixovia did for them on the Works page.
 const CLIENTS = [
   { file: "2.jpg", name: "Elegance", sector: "Beauty salon & bridal studio" },
   { file: "7.jpg", name: "Neithal Shipping", sector: "Shipping" },
@@ -154,12 +154,11 @@ const CLIENTS = [
   { file: "17.jpg", name: "Personal branding client", sector: "Healthcare" },
   { file: "11.jpg", name: "The Burpee Blaster", sector: "Mindful fitness" },
   { file: "15.jpg", name: "Makeup Physics", sector: "Makeup" },
-  { file: "1.jpg", name: "", sector: "" },
   { file: "18.jpg", name: "Phonokart", sector: "" },
   { file: "10.jpg", name: "Cross Colors", sector: "" },
   { file: "14.jpg", name: "Ombak", sector: "" },
   { file: "16.jpg", name: "Puri-fi", sector: "" },
-  { file: "5.jpg", name: "", sector: "" },
+  { file: "5.jpg", name: "Rainbow Overseas", sector: "Paper manufacturer" },
 ];
 const clientLabel = (c) => c.name || "Pixovia client";
 
@@ -215,7 +214,7 @@ const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // Lists build in item by item as they scroll into view. The hidden starting
 // state only applies under html.motion, so nothing is hidden if JS fails.
-const REVEAL = ".sector-links, .service-list, .client-strip, .client-grid, .steps, .offer-groups, .site-types, .contact-details";
+const REVEAL = ".stats, .caps-list, .console-chart .bars, .sector-links, .service-list, .client-strip, .client-grid, .steps, .offer-groups, .site-types, .contact-details";
 
 function initMotion() {
   const header = $(".site-header");

@@ -9,23 +9,21 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Saira:wdth,wght@100..125,500..700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/logo/favicon.png">
-  <meta name="theme-color" content="#521638">
-  <link rel="stylesheet" href="styles.css?v=13">
+  <meta name="theme-color" content="#1a0b17">
+  <link rel="stylesheet" href="styles.css?v=24">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="logo" href="index.html">
-        <img src="assets/logo/logo-dark.png" alt="Pixovia home" width="1263" height="315">
-      </a>
+      <a class="logo" href="index.html" aria-label="Pixovia home"><svg class="logo-mark" viewBox="0 0 236 318" aria-hidden="true"><defs><linearGradient id="lh-g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#4e1e3e"/><stop offset=".45" stop-color="#c2506a"/><stop offset=".72" stop-color="#e05a6f"/><stop offset="1" stop-color="#f3a38c"/></linearGradient><linearGradient id="lh-p" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#6a2a52"/><stop offset="1" stop-color="#a0466f"/></linearGradient></defs><path fill="url(#lh-g)" d="M0 0H190A44 44 0 0 1 234 44V136A52 52 0 0 1 182 188H0V152A58 48 0 0 1 58 104H208.5A8.5 8.5 0 0 0 208.5 87H72A72 50 0 0 1 0 37Z"/><rect x="-36" y="-36" width="72" height="72" rx="7" fill="url(#lh-p)" transform="translate(51 264) rotate(45)"/></svg><img class="logo-word" src="assets/logo/wordmark-white.png" alt="" width="481" height="96"></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Main">
-        <a href="products.html">Software</a>
+        <a href="products.html">Products</a>
         <a href="services.html">Services</a>
-        <a href="clients.html">Clients</a>
-        <a class="nav-cta" href="contact.html">Talk to us</a>
+        <a href="works.html">Works</a>
+        <a class="nav-cta" href="contact.html">Contact us</a>
       </nav>
     </div>
   </header>
@@ -33,92 +31,93 @@
   <main id="main">
     <section class="hero">
       <div class="wrap hero-grid">
-        <div>
-          <h1>What does your business run&nbsp;on?</h1>
-          <p class="lede">Pixovia has 63 ready-built systems for shops, clinics, schools and service businesses, plus the branding and marketing that brings customers through the door.</p>
-          <form class="search" action="products.html" method="get" role="search">
-            <label class="visually-hidden" for="product-search">Search our software by business type</label>
-            <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
-            <input id="product-search" name="q" type="search" placeholder="Try gym, salon, petrol bunk" autocomplete="off">
-            <button class="search-go" type="submit">Find software</button>
-          </form>
+        <div class="hero-copy">
+          <h1>We build the systems serious businesses run&nbsp;on.</h1>
+          <p class="lede">Custom software, 63 ready-built platforms, websites, brands and campaigns, designed and engineered by one team.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid btn-lg" href="products.html">Explore products</a>
+            <a class="btn btn-ghost btn-lg" href="contact.html">Start a project</a>
+          </div>
         </div>
-        <svg class="hero-mark" viewBox="0 0 236 318" aria-hidden="true">
-          <defs>
-            <linearGradient id="mark-grad" x1="0" y1="1" x2="1" y2="0">
-              <stop offset="0" stop-color="#4e1e3e"/>
-              <stop offset=".45" stop-color="#c2506a"/>
-              <stop offset=".72" stop-color="#e05a6f"/>
-              <stop offset="1" stop-color="#f3a38c"/>
-            </linearGradient>
-            <linearGradient id="pixel-grad" x1="0" y1="1" x2="1" y2="0">
-              <stop offset="0" stop-color="#47193a"/>
-              <stop offset="1" stop-color="#6b2b4d"/>
-            </linearGradient>
-          </defs>
-          <g class="slab-depth">
-            <path fill="url(#mark-grad)" d="M0 0H190A44 44 0 0 1 234 44V136A52 52 0 0 1 182 188H0V152A58 48 0 0 1 58 104H208.5A8.5 8.5 0 0 0 208.5 87H72A72 50 0 0 1 0 37Z"/>
-          </g>
-          <g class="pixel-depth">
-            <g class="pixel">
-              <rect x="-36" y="-36" width="72" height="72" rx="7" fill="url(#pixel-grad)" transform="translate(51 264) rotate(45)"/>
+        <div class="hero-art" aria-hidden="true">
+          <svg class="hero-rings" viewBox="0 0 400 400">
+            <circle cx="200" cy="200" r="196"/>
+            <circle cx="200" cy="200" r="152" class="dash"/>
+            <circle cx="200" cy="200" r="108"/>
+          </svg>
+          <svg class="hero-mark" viewBox="0 0 236 318" aria-hidden="true">
+            <defs>
+              <linearGradient id="mark-grad" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#4e1e3e"/>
+                <stop offset=".45" stop-color="#c2506a"/>
+                <stop offset=".72" stop-color="#e05a6f"/>
+                <stop offset="1" stop-color="#f3a38c"/>
+              </linearGradient>
+              <linearGradient id="pixel-grad" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#5a2147"/>
+                <stop offset="1" stop-color="#8c3a62"/>
+              </linearGradient>
+            </defs>
+            <g class="slab-depth">
+              <path fill="url(#mark-grad)" d="M0 0H190A44 44 0 0 1 234 44V136A52 52 0 0 1 182 188H0V152A58 48 0 0 1 58 104H208.5A8.5 8.5 0 0 0 208.5 87H72A72 50 0 0 1 0 37Z"/>
             </g>
-          </g>
-        </svg>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="software-title">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="software-title">Software</h2>
-          <p class="section-intro">63 ready-built systems, from ₹50,000. Pick your sector to see what fits.</p>
+            <g class="pixel-depth">
+              <g class="pixel">
+                <rect x="-36" y="-36" width="72" height="72" rx="7" fill="url(#pixel-grad)" stroke="#f3a38c" stroke-opacity=".45" stroke-width="1.5" transform="translate(51 264) rotate(45)"/>
+              </g>
+            </g>
+          </svg>
         </div>
-        <ul class="sector-links" id="sector-links"></ul>
-        <a class="btn btn-dark section-more" href="products.html">See all 63 products</a>
       </div>
-    </section>
-
-    <section class="section section-wash" aria-labelledby="services-title">
       <div class="wrap">
-        <div class="section-head">
-          <h2 id="services-title">Services</h2>
-          <p class="section-intro">Good software runs the business. These four services bring customers to it.</p>
-        </div>
-        <ul class="service-list">
-          <li>
-            <h3><a href="services.html#websites">Website development</a></h3>
-            <p>A fast site that explains what you do and turns visitors into calls, bookings or orders.</p>
-          </li>
-          <li>
-            <h3><a href="services.html#marketing">Digital marketing</a></h3>
-            <p>Ads, social media, SEO and content, run month to month with reports you can actually read.</p>
-          </li>
-          <li>
-            <h3><a href="contact.html?need=Google%20Business%20Profile">Google Business Profile</a></h3>
-            <p>Show up on Maps when people nearby search for you, with correct hours, photos and replies to reviews.</p>
-          </li>
-          <li>
-            <h3><a href="contact.html?need=Personal%20branding">Personal branding</a></h3>
-            <p>For founders, doctors and consultants whose name is the business. Profile, content and a clear voice.</p>
-          </li>
-        </ul>
-        <a class="btn btn-dark section-more" href="services.html">See all services</a>
+        <dl class="stats">
+          <div><dt>Ready-built systems</dt><dd data-count="63">63</dd></div>
+          <div><dt>Industries served</dt><dd data-count="10">10</dd></div>
+          <div><dt>Branding and marketing services</dt><dd data-count="61">61</dd></div>
+          <div><dt>Brands that trust us</dt><dd data-count="18">18</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section class="section" aria-labelledby="clients-title">
-      <div class="wrap">
-        <div class="section-head">
-          <h2 id="clients-title">Clients</h2>
-          <p class="section-intro">Salons, schools, gyms, interior designers and shipping firms that trust Pixovia.</p>
+    <section class="section caps" aria-labelledby="caps-title">
+      <div class="wrap caps-grid">
+        <div>
+          <div class="section-head">
+            <h2 id="caps-title">Built for complex operations</h2>
+            <p class="section-intro">From one counter to many branches, our systems connect billing, stock, accounts, staff and customers, and keep growing with you.</p>
+          </div>
+          <ul class="caps-list">
+            <li><span class="cap-icon"><i data-lucide="network"></i></span><div><h3>Multi-branch operations</h3><p>Every branch, warehouse and counter on one system, with live stock and sales across all of them.</p></div></li>
+            <li><span class="cap-icon"><i data-lucide="layers"></i></span><div><h3>Billing, stock and accounts in one</h3><p>Each sale updates inventory and your books together, so the numbers always match.</p></div></li>
+            <li><span class="cap-icon"><i data-lucide="hand-coins"></i></span><div><h3>Lending and chit fund engines</h3><p>Loan schedules, interest, collections and member accounts, calculated for you.</p></div></li>
+            <li><span class="cap-icon"><i data-lucide="shopping-cart"></i></span><div><h3>Online stores tied to inventory</h3><p>Your website shop and your counters sell from the same stock.</p></div></li>
+          </ul>
         </div>
-        <ul class="client-strip" id="client-strip"></ul>
-        <a class="btn btn-dark section-more" href="clients.html">See all clients</a>
+        <div class="console" role="img" aria-label="Illustration of a Pixovia dashboard showing sales, bills, stock and branches">
+          <div class="console-bar" aria-hidden="true"><span></span><span></span><span></span><p>Pixovia ERP</p></div>
+          <div class="console-body" aria-hidden="true">
+            <div class="console-side">
+              <p class="is-on">Overview</p><p>Billing</p><p>Inventory</p><p>Accounts</p><p>Branches</p><p>Staff</p>
+            </div>
+            <div class="console-main">
+              <div class="console-kpis">
+                <div><p>Sales today</p><strong>₹1,84,320</strong><span class="up">+12%</span></div>
+                <div><p>Bills</p><strong>312</strong><span class="up">+8%</span></div>
+                <div><p>Low stock</p><strong>14</strong><span class="warn">items</span></div>
+              </div>
+              <div class="console-chart"><p>Sales this week</p><div class="bars"><i style="--h:46%"></i><i style="--h:58%"></i><i style="--h:40%"></i><i style="--h:72%"></i><i style="--h:64%"></i><i style="--h:88%"></i><i style="--h:78%"></i></div></div>
+              <div class="console-rows">
+                <p><span>Main branch</span><span>₹92,400</span></p>
+                <p><span>North branch</span><span>₹54,180</span></p>
+                <p><span>Online store</span><span>₹37,740</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section section-wash" aria-labelledby="process-title">
+    <section class="section" aria-labelledby="process-title">
       <div class="wrap">
         <div class="section-head">
           <h2 id="process-title">How it works</h2>
@@ -136,10 +135,10 @@
     <section class="cta-band" aria-labelledby="cta-title">
       <div class="wrap cta-band-inner">
         <div>
-          <h2 id="cta-title">Tell us what you run</h2>
-          <p>Send a few details and we’ll reply on WhatsApp, usually the same day.</p>
+          <h2 id="cta-title">Have something ambitious in mind?</h2>
+          <p>Tell us what you run. We’ll reply on WhatsApp, usually the same day.</p>
         </div>
-        <a class="btn btn-solid" href="contact.html">Talk to us</a>
+        <a class="btn btn-solid" href="contact.html">Start a project</a>
       </div>
     </section>
   </main>
@@ -147,31 +146,32 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div class="footer-brand">
-        <a class="logo" href="index.html"><img src="assets/logo/logo-dark.png" alt="Pixovia home" width="1263" height="315" loading="lazy"></a>
+        <a class="logo" href="index.html" aria-label="Pixovia home"><svg class="logo-mark" viewBox="0 0 236 318" aria-hidden="true"><defs><linearGradient id="lf-g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#4e1e3e"/><stop offset=".45" stop-color="#c2506a"/><stop offset=".72" stop-color="#e05a6f"/><stop offset="1" stop-color="#f3a38c"/></linearGradient><linearGradient id="lf-p" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#6a2a52"/><stop offset="1" stop-color="#a0466f"/></linearGradient></defs><path fill="url(#lf-g)" d="M0 0H190A44 44 0 0 1 234 44V136A52 52 0 0 1 182 188H0V152A58 48 0 0 1 58 104H208.5A8.5 8.5 0 0 0 208.5 87H72A72 50 0 0 1 0 37Z"/><rect x="-36" y="-36" width="72" height="72" rx="7" fill="url(#lf-p)" transform="translate(51 264) rotate(45)"/></svg><img class="logo-word" src="assets/logo/wordmark-white.png" alt="" width="481" height="96" loading="lazy"></a>
         <p>Software, branding and marketing for growing businesses.</p>
       </div>
       <nav aria-labelledby="footer-pages">
         <h2 class="footer-title" id="footer-pages">Pages</h2>
         <ul class="footer-links">
-            <li><a href="index.html" aria-current="page">Home</a></li>
-            <li><a href="products.html">Software</a></li>
+            <li><a href="index.html" aria-current="page">Pixovia</a></li>
+            <li><a href="products.html">Products</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="clients.html">Clients</a></li>
-            <li><a href="contact.html">Talk to us</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact us</a></li>
         </ul>
       </nav>
       <div>
         <h2 class="footer-title">Contact</h2>
         <ul class="footer-links">
-          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
-          <li><a href="mailto:hello@pixovia.com">hello@pixovia.com</a></li>
+          <li><a href="tel:+919345471624">+91 93454 71624</a></li>
+          <li><a href="mailto:pixoviapvt@gmail.com">pixoviapvt@gmail.com</a></li>
         </ul>
       </div>
     </div>
     <div class="wrap"><p class="footer-base">© <span id="year"></span> Pixovia</p></div>
   </footer>
 
-  <script src="shared.js?v=13"></script>
-  <script src="main.js?v=13"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="shared.js?v=24"></script>
+  <script src="landing.js?v=24"></script>
 </body>
 </html>

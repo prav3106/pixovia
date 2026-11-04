@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Saira:wdth,wght@100..125,500..700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="assets/logo/favicon.png">
   <meta name="theme-color" content="#1a0b17">
-  <link rel="stylesheet" href="styles.css?v=24">
+  <link rel="stylesheet" href="styles.css?v=29">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -20,10 +20,18 @@
       <a class="logo" href="index.html" aria-label="Pixovia home"><svg class="logo-mark" viewBox="0 0 236 318" aria-hidden="true"><defs><linearGradient id="lh-g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#4e1e3e"/><stop offset=".45" stop-color="#c2506a"/><stop offset=".72" stop-color="#e05a6f"/><stop offset="1" stop-color="#f3a38c"/></linearGradient><linearGradient id="lh-p" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#6a2a52"/><stop offset="1" stop-color="#a0466f"/></linearGradient></defs><path fill="url(#lh-g)" d="M0 0H190A44 44 0 0 1 234 44V136A52 52 0 0 1 182 188H0V152A58 48 0 0 1 58 104H208.5A8.5 8.5 0 0 0 208.5 87H72A72 50 0 0 1 0 37Z"/><rect x="-36" y="-36" width="72" height="72" rx="7" fill="url(#lh-p)" transform="translate(51 264) rotate(45)"/></svg><img class="logo-word" src="assets/logo/wordmark-white.png" alt="" width="481" height="96"></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
       <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="services.html" aria-current="page">Services</a>
         <a href="works.html">Works</a>
-        <a class="nav-cta" href="contact.html">Contact us</a>
+        <div class="nav-contact">
+          <button class="nav-cta" type="button" aria-expanded="false" aria-controls="contact-menu">Contact us<svg class="chev" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="contact-menu" id="contact-menu" hidden>
+            <a href="https://wa.me/919345471624?text=Hi%20Pixovia%2C%20I%27d%20like%20to%20talk%20about%20my%20business." target="_blank" rel="noopener"><svg class="cm-ico" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg><span><strong>WhatsApp</strong><small>Chat with us, fastest reply</small></span></a>
+            <a href="tel:+919345471624"><svg class="cm-ico" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><span><strong>Call</strong><small>+91 93454 71624</small></span></a>
+            <a href="mailto:pixoviapvt@gmail.com"><svg class="cm-ico" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><span><strong>Email</strong><small>pixoviapvt@gmail.com</small></span></a>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -31,7 +39,7 @@
   <main id="main">
     <section class="page-head">
       <div class="wrap">
-        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Pixovia</a><span aria-hidden="true">/</span><span aria-current="page">Services</span></nav>
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Services</span></nav>
         <h1>Services</h1>
         <p class="lede">Websites, branding, Google Business Profile and digital marketing, so more people find your business and choose it.</p>
         <nav class="jump-links" aria-label="On this page">
@@ -59,11 +67,11 @@
             <p>Ads, social media, SEO and content, run month to month with reports you can actually read.</p>
           </li>
           <li>
-            <h3><a href="contact.html?need=Google%20Business%20Profile">Google Business Profile</a></h3>
+            <h3><a href="https://wa.me/919345471624?text=Hi%20Pixovia%2C%20I%27d%20like%20to%20ask%20about%20Google%20Business%20Profile." target="_blank" rel="noopener">Google Business Profile</a></h3>
             <p>Show up on Maps when people nearby search for you, with correct hours, photos and replies to reviews.</p>
           </li>
           <li>
-            <h3><a href="contact.html?need=Personal%20branding">Personal branding</a></h3>
+            <h3><a href="https://wa.me/919345471624?text=Hi%20Pixovia%2C%20I%27d%20like%20to%20ask%20about%20Personal%20branding." target="_blank" rel="noopener">Personal branding</a></h3>
             <p>For founders, doctors and consultants whose name is the business. Profile, content and a clear voice.</p>
           </li>
         </ul>
@@ -85,7 +93,7 @@
               <li>Call, WhatsApp and map buttons</li>
               <li>Live in about a week</li>
             </ul>
-            <a class="btn btn-line" href="contact.html?need=Single%20page%20website">Ask about a single page site</a>
+            <a class="btn btn-line" href="https://wa.me/919345471624?text=Hi%20Pixovia%2C%20I%27d%20like%20to%20ask%20about%20Single%20page%20website." target="_blank" rel="noopener">Ask about a single page site</a>
           </article>
           <article class="site-type">
             <h3>Static website</h3>
@@ -95,7 +103,7 @@
               <li>Set up for Google search from day one</li>
               <li>Enquiry form sent to your inbox</li>
             </ul>
-            <a class="btn btn-line" href="contact.html?need=Static%20website">Ask about a static site</a>
+            <a class="btn btn-line" href="https://wa.me/919345471624?text=Hi%20Pixovia%2C%20I%27d%20like%20to%20ask%20about%20Static%20website." target="_blank" rel="noopener">Ask about a static site</a>
           </article>
           <article class="site-type site-type-shop">
             <h3>E-commerce</h3>
@@ -105,7 +113,7 @@
               <li>Order and stock management</li>
               <li>Connects to our billing and inventory software</li>
             </ul>
-            <a class="btn btn-dark" href="contact.html?need=E-commerce%20website">Ask about an online store</a>
+            <a class="btn btn-dark" href="https://wa.me/919345471624?text=Hi%20Pixovia%2C%20I%27d%20like%20to%20ask%20about%20E-commerce%20website." target="_blank" rel="noopener">Ask about an online store</a>
           </article>
         </div>
       </div>
@@ -118,7 +126,7 @@
           <p class="section-intro">From a name and a logo to the paint on your delivery van. Pick one piece or hand us the whole identity.</p>
         </div>
         <div class="offer-groups" id="branding-groups"></div>
-        <a class="btn btn-dark section-more" href="contact.html?need=Branding">Ask about branding</a>
+        <a class="btn btn-dark section-more" href="https://wa.me/919345471624?text=Hi%20Pixovia%2C%20I%27d%20like%20to%20ask%20about%20Branding." target="_blank" rel="noopener">Ask about branding</a>
       </div>
     </section>
 
@@ -129,7 +137,7 @@
           <p class="section-intro">Campaigns, content and photography under one roof, so your ads, posts and website all look like the same business.</p>
         </div>
         <div class="offer-groups" id="marketing-groups"></div>
-        <a class="btn btn-dark section-more" href="contact.html?need=Digital%20marketing">Ask about marketing</a>
+        <a class="btn btn-dark section-more" href="https://wa.me/919345471624?text=Hi%20Pixovia%2C%20I%27d%20like%20to%20ask%20about%20Digital%20marketing." target="_blank" rel="noopener">Ask about marketing</a>
       </div>
     </section>
 
@@ -139,7 +147,7 @@
           <h2 id="cta-title">Not sure where to start?</h2>
           <p>Tell us about your business and we’ll suggest the first step.</p>
         </div>
-        <a class="btn btn-solid" href="contact.html">Contact us</a>
+        <a class="btn btn-solid" href="https://wa.me/919345471624?text=Hi%20Pixovia%2C%20I%27d%20like%20to%20talk%20about%20my%20business." target="_blank" rel="noopener">Contact us</a>
       </div>
     </section>
   </main>
@@ -153,11 +161,11 @@
       <nav aria-labelledby="footer-pages">
         <h2 class="footer-title" id="footer-pages">Pages</h2>
         <ul class="footer-links">
-            <li><a href="index.html">Pixovia</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="services.html" aria-current="page">Services</a></li>
             <li><a href="works.html">Works</a></li>
-            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="https://wa.me/919345471624?text=Hi%20Pixovia%2C%20I%27d%20like%20to%20talk%20about%20my%20business." target="_blank" rel="noopener">Contact us</a></li>
         </ul>
       </nav>
       <div>
@@ -171,7 +179,7 @@
     <div class="wrap"><p class="footer-base">© <span id="year"></span> Pixovia</p></div>
   </footer>
 
-  <script src="shared.js?v=24"></script>
-  <script src="services.js?v=24"></script>
+  <script src="shared.js?v=29"></script>
+  <script src="services.js?v=29"></script>
 </body>
 </html>

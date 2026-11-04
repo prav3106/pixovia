@@ -203,7 +203,28 @@ function initNav() {
     toggle.textContent = open ? "Close" : "Menu";
   };
   toggle.addEventListener("click", () => setOpen(!nav.classList.contains("open")));
-  nav.addEventListener("click", (e) => { if (e.target.closest("a")) setOpen(false); });
+  nav.addEventListener("click", (e) => { if (e.target.closest("a")) { setOpen(false); setMenu(false); } });
+
+  // Contact us opens a small menu: WhatsApp, call or email.
+  const cta = $(".nav-contact .nav-cta");
+  const menu = $("#contact-menu");
+  const setMenu = (open) => {
+    menu.hidden = !open;
+    cta.setAttribute("aria-expanded", String(open));
+  };
+  cta.addEventListener("click", () => {
+    const open = menu.hidden;
+    setMenu(open);
+    if (open) menu.querySelector("a").focus();
+  });
+  document.addEventListener("click", (e) => { if (!e.target.closest(".nav-contact")) setMenu(false); });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !menu.hidden) { setMenu(false); cta.focus(); }
+  });
+  $(".nav-contact").addEventListener("focusout", (e) => {
+    if (!e.currentTarget.contains(e.relatedTarget)) setMenu(false);
+  });
+
   $("#year").textContent = new Date().getFullYear();
   initMotion();
 }

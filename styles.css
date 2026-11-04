@@ -528,6 +528,16 @@ img { max-width: 100%; }
 .dlg-price-note { margin-top: .25rem; color: var(--muted); font-size: var(--t-sm); }
 .product-dialog h3 { margin-top: 1.5rem; font-size: var(--t-base); }
 .dlg-list { margin-top: .5rem; }
+.dlg-features { display: grid; gap: .45rem; margin: .6rem 0 0; padding: 0; list-style: none; }
+.dlg-features li {
+  position: relative; padding: .6rem .8rem .6rem 2.3rem;
+  background: rgba(255,255,255,.045); border-radius: var(--radius); color: var(--heading); line-height: 1.4;
+}
+.dlg-features li::before {
+  content: ""; position: absolute; left: .95rem; top: 1.05rem; width: .5rem; height: .5rem;
+  background: var(--brand-gradient); transform: rotate(45deg); border-radius: 1px;
+}
+.product-dialog[open] .dlg-features li { animation: card-in .35s var(--ease-out) both; animation-delay: calc(.08s + var(--i, 0) * 45ms); }
 .dlg-actions { margin-top: 1.75rem; display: flex; flex-wrap: wrap; gap: .75rem; }
 
 /* ---------- Contact ---------- */

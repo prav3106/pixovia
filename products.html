@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software — Pixovia</title>
+  <meta name="description" content="63 ready-built software systems for shops, clinics, schools and service businesses, from ₹50,000.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Saira:wdth,wght@100..125,500..700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+  <meta name="theme-color" content="#521638">
+  <link rel="stylesheet" href="styles.css?v=13">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html">
+        <img src="assets/logo/logo-dark.png" alt="Pixovia home" width="1263" height="315">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="products.html" aria-current="page">Software</a>
+        <a href="services.html">Services</a>
+        <a href="clients.html">Clients</a>
+        <a class="nav-cta" href="contact.html">Talk to us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head">
+      <div class="wrap">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Software</span></nav>
+        <h1>Software</h1>
+        <p class="lede">63 ready-built systems for shops, clinics, schools and service businesses. Each one is set up with your products, staff and branding.</p>
+        <form class="search" id="catalogue-form" role="search">
+          <label class="visually-hidden" for="catalogue-search">Search software by business type</label>
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+          <input id="catalogue-search" type="search" placeholder="Try gym, salon, petrol bunk" autocomplete="off">
+        </form>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="catalogue-title">
+      <div class="wrap">
+        <h2 id="catalogue-title" class="visually-hidden">All products</h2>
+        <p class="count" aria-live="polite"><strong id="result-count">63</strong> <span id="result-label">systems, ready to set up for you</span></p>
+        <div class="filters">
+          <div class="filter-row">
+            <p class="filter-label" id="sector-label">Sector</p>
+            <div class="chip-row" role="group" aria-labelledby="sector-label" id="sector-filter"></div>
+          </div>
+          <div class="filter-row">
+            <p class="filter-label" id="price-label">Price</p>
+            <div class="chip-row" role="group" aria-labelledby="price-label" id="price-filter"></div>
+          </div>
+        </div>
+
+        <ul class="product-grid" id="product-grid"></ul>
+
+        <div class="empty" id="empty" hidden>
+          <p class="empty-title">Nothing matches <span id="empty-term"></span> yet.</p>
+          <p>We build custom software too. Tell us how your business works and we’ll scope it.</p>
+          <a class="btn btn-dark" href="contact.html?need=Custom%20software">Describe your business</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="wrap cta-band-inner">
+        <div>
+          <h2 id="cta-title">Don’t see your business?</h2>
+          <p>We build custom software around the way you already work.</p>
+        </div>
+        <a class="btn btn-solid" href="contact.html?need=Custom%20software">Ask for custom software</a>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="product-dialog" id="product-dialog" aria-labelledby="dlg-name">
+    <div class="dlg-inner">
+      <button class="dlg-close" id="dlg-close" type="button" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </button>
+      <span class="product-icon product-icon-lg" id="dlg-icon"></span>
+      <h2 id="dlg-name"></h2>
+      <p class="product-sector" id="dlg-sector"></p>
+      <p class="dlg-price" id="dlg-price"></p>
+      <p class="dlg-price-note" id="dlg-price-note"></p>
+      <h3>Every system includes</h3>
+      <ul class="dlg-list diamond-list">
+        <li>Setup with your products, staff and branches</li>
+        <li>Hands-on training for your team</li>
+        <li>Support after you go live</li>
+      </ul>
+      <div class="dlg-actions">
+        <a class="btn btn-dark" id="dlg-demo" href="contact.html">Ask for a demo</a>
+        <a class="btn btn-line" id="dlg-whatsapp" href="#" target="_blank" rel="noopener">WhatsApp us</a>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><img src="assets/logo/logo-dark.png" alt="Pixovia home" width="1263" height="315" loading="lazy"></a>
+        <p>Software, branding and marketing for growing businesses.</p>
+      </div>
+      <nav aria-labelledby="footer-pages">
+        <h2 class="footer-title" id="footer-pages">Pages</h2>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html" aria-current="page">Software</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="contact.html">Talk to us</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <ul class="footer-links">
+          <li><a href="tel:+910000000000">+91 00000 00000</a></li>
+          <li><a href="mailto:hello@pixovia.com">hello@pixovia.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap"><p class="footer-base">© <span id="year"></span> Pixovia</p></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+  <script src="shared.js?v=13"></script>
+  <script src="products.js?v=13"></script>
+</body>
+</html>
